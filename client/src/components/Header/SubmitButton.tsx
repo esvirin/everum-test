@@ -1,7 +1,12 @@
-import React, {FC} from 'react';
+import React from 'react';
 import {Button} from 'antd';
 
-const submitButton = (props:any) => {
+type PropsType = {
+    isFetching: boolean,
+    submitHandle: () => void
+}
+
+const submitButton = (props: PropsType) => {
     return <Button
         disabled={props.isFetching}
         type={"primary"}

@@ -1,7 +1,14 @@
-import React, {FC} from 'react';
+import React from 'react';
 import {Select} from "antd";
+
 const {Option} = Select;
-const Columns = (props:any) => {
+
+type PropsType = {
+    isFetching: boolean
+    changeColumnHandle: (props: string) => void
+}
+
+const Columns = (props: PropsType) => {
     return <Select
         disabled={props.isFetching}
         placeholder={'Выбор колонки'}

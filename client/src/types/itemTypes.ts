@@ -10,5 +10,5 @@ export type ItemDataFieldType = {
     column: string
     condition: string
     meaning: string
-}
+} | {}
 

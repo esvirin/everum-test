@@ -1,14 +1,17 @@
-import React, {FC, PropsWithChildren, useEffect, useState} from 'react';
-import {Button, Col, Input, message, Row, Select} from 'antd';
+import React, {PropsWithChildren, useState} from 'react';
+import {Col, Input, Row, Select} from 'antd';
 
 import Columns from "./Columns";
 import SubmitButton from './SubmitButton';
-import itemsApi from "../../api/itemsApi";
 import {ItemDataFieldType} from "../../types/itemTypes";
 
 type HeaderBarPropsType = {
     isFetching: boolean,
     setRequestFields: ({}: ItemDataFieldType) => void
+}
+
+type EventHandleType = {
+    target: HTMLInputElement;
 }
 
 const {Option} = Select;
@@ -27,7 +30,7 @@ const HeaderBar = (props: PropsWithChildren<HeaderBarPropsType>) => {
     const changeConditionHandle = (value: string) => {
         changeCondition(conditionValue = value)
     }
-    const changeMeaningHandle = (event: any) => {
+    const changeMeaningHandle = (event: EventHandleType) => {
         changeMeaning(meaningValue = event.target.value)
     }
     const submitHandle = () => {
