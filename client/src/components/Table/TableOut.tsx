@@ -14,7 +14,7 @@ const TableOut = (props:PropsType) => {
     const data = items.map(item => {
         return {
             key: item.id,
-            date: item.date,
+            date: new Date(item.date).toLocaleDateString("ru"),
             title: item.title,
             quantity: item.quantity,
             distance: item.distance,

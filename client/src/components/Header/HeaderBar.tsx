@@ -1,9 +1,10 @@
 import React, {PropsWithChildren, useState} from 'react';
-import {Col, Input, Row, Select} from 'antd';
+
 
 import Columns from "./Columns";
 import SubmitButton from './SubmitButton';
 import {ItemDataFieldType} from "../../types/itemTypes";
+import {Col, Input, Row, Select} from "antd"
 
 type HeaderBarPropsType = {
     isFetching: boolean,
@@ -34,7 +35,6 @@ const HeaderBar = (props: PropsWithChildren<HeaderBarPropsType>) => {
         changeMeaning(meaningValue = event.target.value)
     }
     const submitHandle = () => {
-
         setRequestFields({
             column: columnValue,
             condition: conditionValue,

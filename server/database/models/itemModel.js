@@ -1,15 +1,11 @@
 const {DataTypes} = require('sequelize');
 const sequelize = require('../config')
 
-const Items = sequelize.define("items" , {
+const ItemModel = sequelize.define("items" , {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
-        allowNull: false
-    },
-    date: {
-        type: DataTypes.DATE,
         allowNull: false
     },
     title: {
@@ -25,7 +21,7 @@ const Items = sequelize.define("items" , {
         allowNull: true
     },
 }, {
-    timestamps: false
+    timestamps: true
 })
 
-module.exports = Items
+module.exports = ItemModel
