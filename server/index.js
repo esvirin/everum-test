@@ -14,6 +14,7 @@ const {graphqlHTTP} = require("express-graphql");
 app.use(cors())
 app.use(express.json())
 app.use(express.static(path.resolve(__dirname, "..", "client", "public")));
+// app.use(express.static(path.resolve(__dirname, "..", "client", "build")));
 
 
 app.use("/graphql", graphqlHTTP({

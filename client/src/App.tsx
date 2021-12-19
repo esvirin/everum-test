@@ -3,41 +3,27 @@ import React, {useEffect, useState} from 'react'
 import {Layout, message} from 'antd'
 import HeaderBar from "./components/Header/HeaderBar"
 import TableOut from "./components/Table/TableOut"
-import itemsApi, {RequestItemsType} from "./api/itemsApi"
+import {GET_ALL_ITEMS} from "./api/itemsQuery"
 import {ItemType} from "./types/itemTypes"
-
 import {ErrorBoundary} from "react-error-boundary"
 import ErrorHandler from "./components/Errors/ErrorHandler"
+import {useQuery} from '@apollo/client'
 
 const {Header, Content, Footer} = Layout
 
 function App() {
-
-	const [isFetching, setIsFetching] = useState(false as boolean)
+	const {data, loading, error} = useQuery(GET_ALL_ITEMS)
+	const [requestFields, setRequestFields] = useState({} as any)
 	const [items, setItems] = useState([] as Array<ItemType>)
-	const [requestFields, setRequestFields] = useState({} as RequestItemsType)
 
-	const fetchItems = async (payload: RequestItemsType) => {
-		setIsFetching(true)
-		try {
-			return await itemsApi.getItems(payload)
-		} catch (e: any) {
-			message.error(e)
-		} finally {
-			setIsFetching(false)
-		}
-	}
-
-	useEffect(() => {
-		fetchItems(requestFields).then(data => {
-			if (data) setItems(data)
-		})
-	}, [requestFields])
+	useEffect(()=>{
+		if(data) setItems(data.getAllItems)
+	},[data])
 
 	return (
 		<Layout style={{height: '100vh'}}>
 			<Header style={{position: 'fixed', zIndex: 1, width: '100%'}}>
-				<HeaderBar isFetching={isFetching} setRequestFields={setRequestFields}/>
+				<HeaderBar isFetching={loading} setRequestFields={setRequestFields}/>
 			</Header>
 			<Content className="site-layout" style={{padding: '0 50px', marginTop: 64}}>
 				<ErrorBoundary

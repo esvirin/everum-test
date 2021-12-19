@@ -4,48 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bc2ceea-c620-4795-8c0f-e090aa8b6c56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/test-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/itemsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/models/itemModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/schemas/itemSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/error/apiError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/items.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/middleware/errorHandlingMiddleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test-app.iml" beforeDir="false" />
+    <list default="true" id="9bc2ceea-c620-4795-8c0f-e090aa8b6c56" name="Changes" comment="structure update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header/HeaderBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/HeaderBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Table/TableOut.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Table/TableOut.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/itemsController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/models/itemModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/error/apiError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/items.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/errorHandlingMiddleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/itemRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/api/itemsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/itemsQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +65,16 @@
       <workItem from="1639792030531" duration="5600000" />
       <workItem from="1639800127645" duration="3391000" />
       <workItem from="1639857549238" duration="288000" />
-      <workItem from="1639865874896" duration="8045000" />
+      <workItem from="1639865874896" duration="11842000" />
     </task>
+    <task id="LOCAL-00001" summary="structure update">
+      <created>1639883037695</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639883037695</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="structure update" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure update" />
   </component>
 </project>
