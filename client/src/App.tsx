@@ -7,18 +7,28 @@ import {GET_ALL_ITEMS} from "./api/itemsQuery"
 import {ItemType} from "./types/itemTypes"
 import {ErrorBoundary} from "react-error-boundary"
 import ErrorHandler from "./components/Errors/ErrorHandler"
-import {useQuery} from '@apollo/client'
+import {request, gql, GraphQLClient} from 'graphql-request'
 
 const {Header, Content, Footer} = Layout
 
 function App() {
-	const {data, loading, error} = useQuery(GET_ALL_ITEMS)
+
+	const client = new GraphQLClient("http://localhost:5000/graphql", {
+		headers: {
+			"Content-Type": "application/json"
+		}
+	})
+
 	const [requestFields, setRequestFields] = useState({} as any)
 	const [items, setItems] = useState([] as Array<ItemType>)
+	const [loading, setLoading] = useState(false)
 
-	useEffect(()=>{
-		if(data) setItems(data.getAllItems)
-	},[data])
+	useEffect(() => {
+		setLoading(true)
+		client.request(GET_ALL_ITEMS).then((data) => {
+			if (data) setItems(data.getAllItems)
+		}).finally(() => setLoading(false))
+	}, [])
 
 	return (
 		<Layout style={{height: '100vh'}}>

@@ -1,5 +1,5 @@
 import {ItemDataFieldType, ItemType} from "../types/itemTypes"
-import {gql} from "@apollo/client"
+import { gql } from 'graphql-request'
 
 export const GET_ALL_ITEMS = gql`
     query{

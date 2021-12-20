@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bc2ceea-c620-4795-8c0f-e090aa8b6c56" name="Changes" comment="structure update">
+    <list default="true" id="9bc2ceea-c620-4795-8c0f-e090aa8b6c56" name="Changes" comment="update front client prisma">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/api/itemsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/itemsQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/api/itemsQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/itemsQuery.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,8 @@
       <workItem from="1639792030531" duration="5600000" />
       <workItem from="1639800127645" duration="3391000" />
       <workItem from="1639857549238" duration="288000" />
-      <workItem from="1639865874896" duration="11842000" />
+      <workItem from="1639865874896" duration="12147000" />
+      <workItem from="1639935573300" duration="3529000" />
     </task>
     <task id="LOCAL-00001" summary="structure update">
       <created>1639883037695</created>
@@ -74,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639883037695</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update front apollo">
+      <created>1639887150365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639887150365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +101,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="structure update" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure update" />
+    <MESSAGE value="update front apollo" />
+    <MESSAGE value="update front client prisma" />
+    <option name="LAST_COMMIT_MESSAGE" value="update front client prisma" />
   </component>
 </project>
